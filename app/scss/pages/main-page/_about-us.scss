@@ -1,0 +1,26 @@
+.about-us {
+
+    // .about-us__container
+
+    &__container {
+    }
+
+    // .about-us__title
+
+    &__title {
+        padding-top: 75px;
+        @include _768 {
+            padding-top: 100px;
+        }
+    }
+
+    // .about-us__text
+
+    &__text {
+        padding-top: 32px;
+        
+        @include _768 {
+            columns: 2;
+        }
+    }
+}

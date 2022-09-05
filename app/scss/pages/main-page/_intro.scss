@@ -1,0 +1,55 @@
+.intro {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    // .intro__bg
+
+    &__bg {
+        position: absolute;
+        left: 50%; top: 0;
+        transform: translate3d(-50%,0,0);
+        width: 100%;
+        min-width: 1440px;
+
+        z-index: -1;
+        // .intro__bg--img
+
+        &--img {
+            width: 100%;
+            user-select: none;
+        }
+    }
+
+    // .intro__container
+
+    &__container {
+        width: 100%;
+    }
+
+    // .intro__info
+
+    &__info {
+        padding: 120px 0;
+        max-width: 575px;
+    }
+
+    // .intro__main-title
+
+    &__main-title {
+    }
+
+    // .intro__text
+
+    &__text {
+        padding-top: 16px;
+    }
+
+    // .intro__btn
+
+    &__btn {
+        margin-top: 32px;
+    }
+}
+

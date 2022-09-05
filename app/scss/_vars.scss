@@ -1,0 +1,48 @@
+
+
+$containerPadding: 15;
+
+$container: 1218 + ($containerPadding * 2);
+$containerMin: 992 + ($containerPadding * 2);
+$containerLarge: 1440 + ($containerPadding * 2);
+
+:root {
+    --title-font: 'Montserrat';
+    --main-font: 'Montserrat';
+    
+    --accent: #2FAF49;
+
+    --blue: #00D3FF;
+    --blue-hover: #00A3FF;
+    --blue-active: #0083cf;
+    --dark-blue: #080F3D;
+    --dark-blue-2: #0E185D;
+    --dark-blue-3: #000c58;
+    --aqua: #42E8E0;
+    --dark: #02071F;
+
+    --white: #FFF;
+    --black: #000;
+
+    --container-padding: 15px;
+}
+
+@font-face {
+    @include font-include('Montserrat', 400, swap, normal, 'Montserrat-Regular');
+}
+
+@font-face {
+    @include font-include('Montserrat', 500, swap, normal, 'Montserrat-Medium');
+}
+
+@font-face {
+    @include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
+}
+
+@font-face {
+    @include font-include('Montserrat', 700, swap, normal, 'Montserrat-Bold');
+}
+
+@font-face {
+    @include font-include('Montserrat', 800, swap, normal, 'Montserrat-ExtraBold');
+}

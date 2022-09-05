@@ -1,0 +1,45 @@
+.consulting-services {
+
+    // .consulting-services__container
+
+    &__container {
+    }
+
+    // .consulting-services__title
+
+    &__title {
+    }
+
+    // .consulting-services__row
+
+    &__row {
+        padding-top: 32px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: calc(-32px / 2);
+    }
+
+    // .consulting-services__link
+
+    &__link {
+        width: min(250px, 100%);
+        margin: calc(32px / 2);
+        text-align: center;
+    }
+
+    // .consulting-services__image
+
+    &__image {
+        margin-top: 56px;
+
+        // .consulting-services__image--img
+
+        &--img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

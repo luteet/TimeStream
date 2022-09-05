@@ -1,0 +1,42 @@
+.footer {
+    flex: 0 0 auto;
+    padding: 64px 0;
+    background: var(--dark);
+    
+    // .footer__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    // .footer__logo
+
+    &__logo {
+
+        // .footer__logo--img
+
+        &--img {
+        }
+    }
+
+    // .footer__copy
+
+    &__copy {
+        padding-top: 24px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 171%;
+
+        text-align: justify;
+
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+}
+

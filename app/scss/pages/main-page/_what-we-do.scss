@@ -1,0 +1,144 @@
+.what-we-do {
+
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0; top: 50%;
+        transform: translate(50%,-40%);
+        width: 1400px; height: 1400px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(0,11,88,0.4) 0%, rgba(255,255,255,0) 70%);
+        z-index: -1;
+    }
+    // .what-we-do__container
+
+    &__container {
+    }
+
+    // .what-we-do__title
+
+    &__title {
+    }
+
+    // .what-we-do__list
+
+    &__list {
+        padding-top: 30px;
+        @include _768 {
+            padding-top: 88px;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: -30px calc(-90px / 2);
+        @media(min-width: 500px) {
+            margin: -15px calc(-90px / 2);
+        }
+        
+    }
+
+    // .what-we-do__card
+
+    &__card {
+        flex: 0 1 100%;
+        padding: 30px calc(90px / 2);
+
+        @media(min-width: 500px) {
+            flex: 0 1 50%;
+            padding: 15px calc(90px / 2);
+        }
+
+        @include _768 {
+            flex: 0 1 33.333%;
+        }
+        
+        @include _992 {
+            flex: 0 1 25%;
+        }
+        
+        // .what-we-do__card--body
+
+        &--body {
+            
+        }
+
+        &--body:hover &--image {
+            background: var(--dark-blue-2);
+        }
+
+        // .what-we-do__card--image
+
+        &--image {
+            background: var(--dark-blue);
+            border-radius: 15px;
+            transition: background .2s ease-in-out;
+        }
+
+        // .what-we-do__card--image-body
+
+        &--image-body {
+            position: relative;
+            width: 100%; padding-top: 100%;
+        }
+
+        // .what-we-do__card--img
+
+        &--img {
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%,-50%);
+            max-width: calc(100% - 30px);
+            width: 75%;
+            @media(min-width: 500px) {
+                width: auto;
+            }
+        }
+
+        // .what-we-do__card--circle
+
+        &--line {
+            position: relative;
+            padding: 40px 0;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%; top: 50%;
+                transform: translate(-50%,-50%);
+                width: 100vw; height: 1px;
+                background: var(--aqua);
+                z-index: -1;
+            }
+        }
+
+
+        &--circle {
+            position: relative;
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                left: 50%; top: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 50%;
+            }
+
+            &::before {
+                width: 24px; height: 24px;
+                border: 1px solid var(--aqua);
+                background: var(--dark);
+            }
+
+            &::after {
+                width: 8px; height: 8px;
+                background: var(--aqua);
+            }
+        }
+
+        // .what-we-do__card--text
+
+        &--text {
+        }
+    }
+}

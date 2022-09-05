@@ -1,0 +1,27 @@
+@import 'mixin';
+@import 'null';
+@import 'libs';
+@import 'vars';
+@import 'global';
+@import 'font';
+
+@import 'main-sections/header';
+
+
+@import 'pages/main-page/intro';
+@import 'pages/main-page/advantages';
+@import 'pages/main-page/what-we-do';
+@import 'pages/main-page/how-we-do';
+@import 'pages/main-page/streams';
+@import 'pages/main-page/contact-us';
+@import 'pages/main-page/solutions';
+@import 'pages/main-page/consulting-services.scss';
+@import 'pages/main-page/about-us';
+@import 'pages/main-page/our-core';
+@import 'pages/main-page/team';
+@import 'pages/main-page/about-company';
+@import 'pages/main-page/our-partners';
+@import 'pages/main-page/var';
+
+
+@import 'main-sections/footer';

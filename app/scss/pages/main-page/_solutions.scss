@@ -1,0 +1,43 @@
+.solutions {
+
+    // .solutions__container
+
+    &__container {
+        
+    }
+
+    // .solutions__title
+
+    &__title {
+        
+    }
+
+    &__row {
+        padding-top: 40px;
+
+        @include _992 {
+            padding-top: 77px;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: calc(-32px / 2);
+    }
+
+    // .solutions__btn
+
+    &__btn {
+        margin: calc(32px / 2);
+        width: min(384px, 100%); height: 106px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        // .solutions__btn--img
+
+        &--img {
+            max-width: calc(100% - 15px);
+        }
+    }
+}
