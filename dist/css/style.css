@@ -2956,6 +2956,7 @@ body._popup-active {
 
 .consulting-services__image--img {
   width: 100%;
+  height: 274px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3237,6 +3238,24 @@ body._popup-active {
   background: var(--aqua);
 }
 
+.var {
+  position: relative;
+}
+
+.var::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  width: 1300px;
+  height: 1300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 11, 88, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: -1;
+}
+
 .var__header {
   max-width: 840px;
   margin: 28px auto 0 auto;
@@ -3393,6 +3412,10 @@ body._popup-active {
 
   .contact-us__list {
     padding-top: 60px;
+  }
+
+  .consulting-services__image--img {
+    height: 474px;
   }
 
   .about-us__title {

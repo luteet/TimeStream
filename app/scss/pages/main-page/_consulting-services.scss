@@ -38,7 +38,10 @@
         // .consulting-services__image--img
 
         &--img {
-            width: 100%;
+            width: 100%; height: 274px;
+            @include _768 {
+                height: 474px;
+            }
             object-fit: cover;
         }
     }

@@ -1,5 +1,15 @@
 .var {
-
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%; top: 0%;
+        transform: translate(-50%,-25%);
+        width: 1300px; height: 1300px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(0,11,88,0.4) 0%, rgba(255,255,255,0) 70%);
+        z-index: -1;
+    }
     // .var__container
 
     &__container {
