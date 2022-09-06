@@ -1,0 +1,86 @@
+@@include("html/_header.html")
+
+    <main class="main">
+        <section class="team-person">
+            <div class="team-person__container container">
+                <div class="team-person__header txt-center">
+                    <a href="index.html" class="team-person__back back-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Back
+                        </span>
+                    </a>
+                    <h2 class="team-person__main-title main-title">
+                        About Us
+                    </h2>
+                </div>
+                <div class="team-person__info">
+                    <div class="team-person__info--body">
+                        <div class="team-person__info--col" data-sticky-container>
+                            <div class="team-person__info--col-body sticky">
+                                <div class="team-person__info--avatar">
+                                    <picture>
+                                        <source srcset="img/main-page/team/avatar-1.webp" type="image/webp">
+                                        <img src="img/main-page/team/avatar-1.png" loading="lazy" alt="" width="300" class="team-person__info--avatar-img">
+                                    </picture>
+                                </div>
+                                <h2 class="team-person__info--name title">
+                                    Shahid Osmani
+                                </h2>
+                                <span class="team-person__info--proffestion">
+                                    Managing Director
+                                </span>
+                            </div>
+                        </div>
+                        <div class="team-person__info--col">
+                            <div class="team-person__info--text">
+                                <p>
+                                    Shahid Osmani is a veteran in the field of Business Process Excellence. With diversified experience spanning over three decades, out of which, more than two decades have been in Dubai, UAE, Shahid has helped various organizations in the government, retail, automotive, real estate development and trade supply logistics in enhancing their level of process maturity in their business excellence journey.
+                                </p>
+                                <p>
+                                    His major accolade has been as the primary author of the service provisioning costing methodology for Dubai government, which he finalized as a Senior Consultant, during his secondment with The Executive Council of Dubai from Dubai Customs. This methodology was approved and mandated by Sheikh Hamdan bin Mohammed, Crown Prince and the Chairman of the Executive Council, Dubai, through a decree to be adopted by all the Government Departments of Dubai. This methodology is implemented utilizing strategy to execution model through integrated digital platform.
+                                </p>
+                                <p>
+                                    Being academically qualified in Business Administration and Information Technology, Shahid has always acted as catalyst during major IT transformation projects since the start of his career.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-person-other section-padding _min">
+            <div class="team-person-other__container container">
+                <h2 class="team-person-other__title section-title">
+                    Other staff
+                </h2>
+                <ul class="team-person-other__list">
+                    @@loop("html/team/_card.html", [
+                        {
+                            "image": '2',
+                            "name": 'Saleem uz Zaman',
+                            "profession": 'Director Business Development',
+                            "link": 'team-person-2.html',
+                        },
+                        {
+                            "image": '3',
+                            "name": 'Jamshed Rabadi',
+                            "profession": 'Director Finance and Taxation',
+                            "link": 'team-person-3.html',
+                        },
+                        {
+                            "image": '4',
+                            "name": 'Shahid Suri',
+                            "profession": 'Director Technology & Innovation',
+                            "link": 'team-person-4.html',
+                        },
+                    ])
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+
+@@include("html/_footer.html")

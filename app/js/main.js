@@ -42,7 +42,47 @@ body.addEventListener('click', function (event) {
 
 })
 
-var instances = OverlayScrollbars(document.querySelectorAll('.custome-scrollbar'), { }); 
+var instances = OverlayScrollbars(document.querySelectorAll('.custom-scrollbar'), { }); 
+
+
+
+let resizeCheck = {}, windowSize;
+
+function resizeCheckFunc(size, minWidth, maxWidth) {
+  if (windowSize <= size && (resizeCheck[String(size)] == true || resizeCheck[String(size)] == undefined) && resizeCheck[String(size)] != false) {
+    resizeCheck[String(size)] = false;
+    maxWidth(); // < size
+  }
+
+  if (windowSize >= size && (resizeCheck[String(size)] == false || resizeCheck[String(size)] == undefined) && resizeCheck[String(size)] != true) {
+    resizeCheck[String(size)] = true;
+    minWidth(); // > size
+  }
+}
+
+let stickyPlugin = new Sticky('.sticky');
+
+function resize() {
+
+  windowSize = window.innerWidth
+
+  resizeCheckFunc(768,
+    function () {  // screen > 768px
+
+      stickyPlugin = new Sticky('.sticky');
+
+  },
+  function () {  // screen < 768px
+
+    stickyPlugin.destroy()
+
+  });
+
+}
+
+resize();
+
+window.onresize = resize;
 
 // =-=-=-=-=-=-=-=-=-=-=-=- <slider> -=-=-=-=-=-=-=-=-=-=-=-=
 /*

@@ -1,0 +1,89 @@
+@@include("html/_header.html")
+
+    <main class="main">
+        <section class="team-person">
+            <div class="team-person__container container">
+                <div class="team-person__header txt-center">
+                    <a href="index.html" class="team-person__back back-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Back
+                        </span>
+                    </a>
+                    <h2 class="team-person__main-title main-title">
+                        About Us
+                    </h2>
+                </div>
+                <div class="team-person__info">
+                    <div class="team-person__info--body">
+                        <div class="team-person__info--col" data-sticky-container>
+                            <div class="team-person__info--col-body sticky">
+                                <div class="team-person__info--avatar">
+                                    <picture>
+                                        <source srcset="img/main-page/team/avatar-3.webp" type="image/webp">
+                                        <img src="img/main-page/team/avatar-3.png" loading="lazy" alt="" width="300" class="team-person__info--avatar-img">
+                                    </picture>
+                                </div>
+                                <h2 class="team-person__info--name title">
+                                    Jamshed Rabadi
+                                </h2>
+                                <span class="team-person__info--proffestion">
+                                    Director Finance and Taxation
+                                </span>
+                            </div>
+                        </div>
+                        <div class="team-person__info--col">
+                            <div class="team-person__info--text">
+                                <p>
+                                    Rabadi brings to the Timestream Group a broad experience in Finance, Auditing, Treasury and Taxation. Prior to joining TSG, he was formerly CFO for NCR Corporation Branches Namely – United Arab Emirates, Qatar, Oman and Pakistan.
+                                </p>
+                                <p>
+                                    He began working at NCR in 1982 and held numerous finance roles of increasing responsibility. He was responsible for restructuring the NCR branch operations to bring them in line with the local laws of Qatar and United Arab Emirates.
+                                </p>
+                                <p>
+                                    Rabadi led the Spinoff of Teradata from NCR Corporation in Pakistan. This entailed meeting the legal requirements of setting up of Teradata operations in Pakistan as a separate entity with its own offices and resources.
+                                </p>
+                                <p>
+                                    Rabadi worked for a Pharmaceutical distribution company from 1980 before joining NCR where he looked after the Accounting for all its branches.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-person-other section-padding _min">
+            <div class="team-person-other__container container">
+                <h2 class="team-person-other__title section-title">
+                    Other staff
+                </h2>
+                <ul class="team-person-other__list">
+                    @@loop("html/team/_card.html", [
+                        {
+                            "image": '1',
+                            "name": 'Shahid Osmani',
+                            "profession": 'Managing Director',
+                            "link": 'team-person-1.html',
+                        },
+                        {
+                            "image": '2',
+                            "name": 'Saleem uz Zaman',
+                            "profession": 'Director Business Development',
+                            "link": 'team-person-2.html',
+                        },
+                        {
+                            "image": '4',
+                            "name": 'Shahid Suri',
+                            "profession": 'Director Technology & Innovation',
+                            "link": 'team-person-4.html',
+                        },
+                    ])
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+
+@@include("html/_footer.html")

@@ -1,0 +1,95 @@
+@@include("html/_header.html")
+
+    <main class="main">
+        <section class="team-person">
+            <div class="team-person__container container">
+                <div class="team-person__header txt-center">
+                    <a href="index.html" class="team-person__back back-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Back
+                        </span>
+                    </a>
+                    <h2 class="team-person__main-title main-title">
+                        About Us
+                    </h2>
+                </div>
+                <div class="team-person__info">
+                    <div class="team-person__info--body" data-sticky-container>
+                        <div class="team-person__info--col">
+                            <div class="team-person__info--col-body sticky">
+                                <div class="team-person__info--avatar">
+                                    <picture>
+                                        <source srcset="img/main-page/team/avatar-4.webp" type="image/webp">
+                                        <img src="img/main-page/team/avatar-4.png" loading="lazy" alt="" width="300" class="team-person__info--avatar-img">
+                                    </picture>
+                                </div>
+                                <h2 class="team-person__info--name title">
+                                    Jamshed Rabadi
+                                </h2>
+                                <span class="team-person__info--proffestion">
+                                    Director Finance and Taxation
+                                </span>
+                            </div>
+                        </div>
+                        <div class="team-person__info--col">
+                            <div class="team-person__info--text">
+                                <p>
+                                    Shahid is a seasoned IT professional with over 23 years of experience in delivering IT solutions within Banking and Retail sectors. He is passionate about building robust, extensible, and scalable solutions which he has proven time and again.
+                                </p>
+                                <p>
+                                    Shahid has worked with many leading financial institutions, payment networks and retailers and has a deep understanding of today’s business needs and how technology can drive innovation and new services. He has extensive experience in Banking and Payments, Credit Risk, Switching and Middleware Systems, Mobile Apps, BI, and Data Science.
+                                </p>
+                                <p>
+                                    Before joining Timestream Management & Solutions, Shahid was running his consulting firm in the United Kingdom offering his services to major Financial and Retail customers. Some of his notable projects include delivering an Omni-channel Instant Credit Application System, and its consumer mobile app for one of the largest UK online retailers, and Core Banking platform migration for a large bank. Prior to his consulting business, Shahid worked with VISA Europe for 6 years enhancing VISA’s core authorisation platform and implemented real-time fraud scoring and P2P mobile payments.
+                                </p>
+                                <p>
+                                    Shahid worked at Avanza Solutions and TPS Pakistan for 6 years, until 2004, when he moved to the UK. During that time, he contributed to the design and delivery of many innovative solutions for customers which are still in use by many banks in Pakistan, Middle East, and Africa regions.
+                                </p>
+                                <p>
+                                    With experience and knowledge on variety of payment methods used in the industry: Cards, Mobile Wallets, QR code, P2P Payments, he has built many solutions using full payment lifecycle including authorization, clearing and settlement. Shahid has in-depth knowledge on the payment standards: ISO-8583 and ISO-20022 standards for financial services for EFT, Visa (Base-I, Base-II, and SMS), MasterCard MDS, SWIFT, LINK and Faster Payments processing. His strength in Cryptography, Application and Data Security, PCI-DSS standard, and Tokenization is helping him design and deliver strong and robust solutions across Financial and Retail Industry.
+                                </p>
+                                <p>
+                                    Shahid holds a Master’s degree in Business Systems Analysis and Design (BSAD) from City University, London and a Bachelor of Computer Science from FAST NUCES, Karachi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-person-other section-padding _min">
+            <div class="team-person-other__container container">
+                <h2 class="team-person-other__title section-title">
+                    Other staff
+                </h2>
+                <ul class="team-person-other__list">
+                    @@loop("html/team/_card.html", [
+                        {
+                            "image": '1',
+                            "name": 'Shahid Osmani',
+                            "profession": 'Managing Director',
+                            "link": 'team-person-1.html',
+                        },
+                        {
+                            "image": '2',
+                            "name": 'Saleem uz Zaman',
+                            "profession": 'Director Business Development',
+                            "link": 'team-person-2.html',
+                        },
+                        {
+                            "image": '3',
+                            "name": 'Jamshed Rabadi',
+                            "profession": 'Director Finance and Taxation',
+                            "link": 'team-person-3.html',
+                        },
+                    ])
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+
+@@include("html/_footer.html")

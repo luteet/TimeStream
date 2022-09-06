@@ -35,6 +35,7 @@ function cleanDist() {
 function scriptsLib() {
     return src([
         'node_modules/swiper/swiper-bundle.min.js', // Слайдер
+        'node_modules/sticky-js/dist/sticky.min.js', // Слайдер
         'app/js/OverlayScrollbars.min.js', // Кастомный скроллбар
         //'node_modules/shufflejs/dist/shuffle.min.js', // Tab Filter
         //'node_modules/sticky-js/dist/sticky.min.js' // Sticky

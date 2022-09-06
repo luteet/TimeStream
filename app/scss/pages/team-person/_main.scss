@@ -1,0 +1,222 @@
+.team-person {
+    padding: 120px 0 20px;
+    @include _992 {
+        padding: 184px 0 60px;
+    }
+
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%; top: 0%;
+        transform: translate(-50%,-50%);
+        width: 1600px; height: 1600px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(0,11,88,0.6) 0%, rgba(255,255,255,0) 70%);
+        z-index: -1;
+        filter: blur(5px);
+    }
+    // .team-person__container
+
+    &__container {
+    }
+
+    // .team-person__header
+
+    &__header {
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .team-person__back
+
+    &__back {
+    }
+
+    // .team-person__main-title
+
+    &__main-title {
+    }
+
+    // .team-person__info
+
+    &__info {
+
+        padding-top: 40px;
+
+        @include _768 {
+            padding-top: 50px;
+        }
+        
+        @include _992 {
+            padding-top: 60px;
+        }
+
+        // .team-person__info--body
+
+        &--body {
+            background: var(--dark-blue);
+            border-radius: 16px;
+
+            display: grid;
+            grid-template-columns: 100%;
+
+            padding: 30px 15px;
+
+            @include _768 {
+                padding: 0 68px 0 68px;
+                grid-template-columns: minmax(auto, 220px) auto;
+            }
+            
+            @include _992 {
+                padding: 0 68px 0 104px;
+                grid-template-columns: minmax(auto, 300px) auto;
+            }
+            
+        }
+
+        &--body > *:first-child &--col-body {
+            text-align: center;
+            @include _768 {
+                padding: 68px 0;
+                text-align: left;
+            }
+        }
+
+        
+
+        // .team-person__info--col
+
+        &--col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include _768 {
+                align-items: flex-start;
+            }
+
+            &:nth-child(2) {
+                @include _768 {
+                    padding: 68px 0 68px 30px;
+                }
+                
+                @include _992 {
+                    padding: 68px 0 68px 64px;
+                }
+            }
+        }
+
+        // .team-person__info--avatar
+
+        &--avatar {
+            text-align: center;
+            @include _768 {
+                text-align: left;
+            }
+        }
+
+        // .team-person__info--avatar-img
+
+        &--avatar-img {
+            width: min(100%, 220px);
+            border-radius: 50%;
+            
+        }
+
+        // .team-person__info--name
+
+        &--name {
+            padding-top: 24px; padding-bottom: 8px;
+        }
+
+        // .team-person__info--proffestion
+
+        &--proffestion {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        // .team-person__info--text
+
+        &--text {
+            max-width: 718px;
+            padding-top: 20px;
+
+            font-size: 0.875rem;
+            @include _768 {
+                font-size: 1rem;
+                padding-top: 0;
+            }
+
+            & p {
+                padding: 10px 0;
+            }
+        }
+    }
+
+    // .team-person__other
+
+    &__other {
+
+        display: grid;
+
+        margin: -16px;
+
+        // .team-person__other--list
+
+        &--list {
+            
+        }
+    }
+}
+
+.team-person-other {
+
+    // .team-person-other__container
+
+    &__container {
+    }
+
+    // .team-person-other__title
+
+    &__title {
+        text-align: center;
+    }
+
+    // .team-person-other__list
+
+    &__list {
+        padding-top: 20px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include _768 {
+            padding-top: 70px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        & > * {
+            justify-self: center;
+            display: flex;
+            justify-content: center;
+            @include _768 {
+                display: block;
+            }
+        }
+
+        & .team__card--body {
+            
+            @include _768 {
+                max-width: 280px;
+                padding: 50px 20px;
+            }
+        }
+    }
+}
