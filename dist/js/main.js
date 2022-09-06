@@ -80,7 +80,7 @@ let streamsSlider = new Swiper('.streams__slider', {
   slidesPerView: 1,
   direction: "vertical",
 
-  loop: true,
+  //loop: true,
   pagination: {
     el: '.swiper-pagination#streams-pagination',
     clickable: true,
