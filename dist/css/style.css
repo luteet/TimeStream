@@ -1957,8 +1957,8 @@ html.os-html > .os-host > .os-scrollbar {
 }
 
 :root {
-  --title-font: "Montserrat";
-  --main-font: "Montserrat";
+  --title-font: "Montserrat", Geneva, sans-serif;
+  --main-font: "Montserrat", Geneva, sans-serif;
   --accent: #2FAF49;
   --blue: #00D3FF;
   --blue-hover: #00A3FF;
@@ -2093,6 +2093,10 @@ body._popup-active {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn {
