@@ -6,6 +6,9 @@ const body = document.querySelector('body'),
     header = document.querySelector('.header');
 
 
+
+// =-=-=-=-=-=-=-=-=-=- <click events> -=-=-=-=-=-=-=-=-=-=-
+
 let thisTarget;
 body.addEventListener('click', function (event) {
 
@@ -42,9 +45,19 @@ body.addEventListener('click', function (event) {
 
 })
 
+// =-=-=-=-=-=-=-=-=-=- </click events> -=-=-=-=-=-=-=-=-=-=-
+
+
+
+// =-=-=-=-=-=-=-=-=-=- <custom-scrollbar> -=-=-=-=-=-=-=-=-=-=-
+
 var instances = OverlayScrollbars(document.querySelectorAll('.custom-scrollbar'), { }); 
 
+// =-=-=-=-=-=-=-=-=-=- </custom-scrollbar> -=-=-=-=-=-=-=-=-=-=-
 
+
+
+// =-=-=-=-=-=-=-=-=-=- <resize> -=-=-=-=-=-=-=-=-=-=-
 
 let resizeCheck = {}, windowSize;
 
@@ -84,62 +97,22 @@ resize();
 
 window.onresize = resize;
 
-// =-=-=-=-=-=-=-=-=-=-=-=- <slider> -=-=-=-=-=-=-=-=-=-=-=-=
-/*
-let slider = new Swiper('.__slider', {
-  
-    spaceBetween: 30,
-    slidesPerView: 1,
-    centeredSlides: false,
+// =-=-=-=-=-=-=-=-=-=- </resize> -=-=-=-=-=-=-=-=-=-=-
 
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      992: {
-        slidesPerView: 3,
-        centeredSlides: true,
-    
-      },
-      600: {
-        slidesPerView: 2,
-        centeredSlides: false,
-      },
-    }
-}); 
-*/
+
+
+// =-=-=-=-=-=-=-=-=-=-=-=- <slider> -=-=-=-=-=-=-=-=-=-=-=-=
+
 let streamsSlider = new Swiper('.streams__slider', {
   
   spaceBetween: 30,
   slidesPerView: 1,
   direction: "vertical",
 
-  //loop: true,
   pagination: {
     el: '.swiper-pagination#streams-pagination',
     clickable: true,
   },
-  /* navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    992: {
-      slidesPerView: 3,
-      centeredSlides: true,
-  
-    },
-    600: {
-      slidesPerView: 2,
-      centeredSlides: false,
-    },
-  } */
 });
 
 let ourPartnersSlider = new Swiper('.our-partners__slider', {

@@ -3087,6 +3087,16 @@ body._popup-active {
   visibility: visible;
 }
 
+.team__card--body:active .team__card--avatar::before {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.team__card--body:active .team__card--avatar::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .team__card--avatar {
   margin: 0 18px;
   position: relative;
