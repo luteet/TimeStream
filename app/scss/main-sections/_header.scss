@@ -160,9 +160,11 @@
         display: flex;
         justify-content: center;
         width: 100%;
+
         @include _992 {
             width: auto;
         }
+
         &--target {
             background: transparent;
             color: var(--white);
@@ -203,6 +205,7 @@
             }
             
         }
+
         &._active &--target {
             color: var(--blue);
             &-arrow {
@@ -212,10 +215,12 @@
                 }
             }
         }
+
         &._active &--block {
             transform: translate3d(-50%,0,0);
             opacity: 1; visibility: visible;
         }
+
         &--block {
             position: absolute;
             left: 50%; top: 100%;
@@ -267,6 +272,8 @@
         z-index: 10;
     
         cursor: pointer;
+
+        font-size: 0;
     
         display: inline-block;
         @include _992 {
