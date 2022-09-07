@@ -37,15 +37,7 @@
     }
     
     &._min {
-        font-size: 1rem;
-
-        @include _768 {
-            font-size: 1.125rem;
-        }
-    
-        @include _992 {
-            font-size: 1.25rem;
-        }
+        font-size: 1.25rem;
     }
 }
 

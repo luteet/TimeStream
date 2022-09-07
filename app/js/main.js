@@ -108,6 +108,7 @@ let streamsSlider = new Swiper('.streams__slider', {
   spaceBetween: 30,
   slidesPerView: 1,
   direction: "vertical",
+  effect: "flip",
 
   pagination: {
     el: '.swiper-pagination#streams-pagination',
