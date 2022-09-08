@@ -162,9 +162,11 @@ body {
 
 .back-link {
     align-self: flex-start;
+    margin-bottom: 5px;
     @include _992 {
         position: absolute;
         left: 0; top: 15px;
+        margin-bottom: 0;
     }
 
     display: flex;

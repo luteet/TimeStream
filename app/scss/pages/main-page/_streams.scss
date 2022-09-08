@@ -20,6 +20,7 @@
 
     &__slider {
         height: 501px;
+        overflow: visible;
         @include _992 {
             height: 601px;
         }

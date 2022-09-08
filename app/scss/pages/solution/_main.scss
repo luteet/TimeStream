@@ -1,0 +1,127 @@
+.solution {
+
+    padding: 120px 0 20px;
+    @include _992 {
+        padding: 184px 0 60px;
+    }
+
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%; top: 0%;
+        transform: translate(-50%,-50%);
+        width: 1600px; height: 1600px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(0,11,88,0.6) 0%, rgba(255,255,255,0) 70%);
+        z-index: -1;
+        filter: blur(5px);
+    }
+
+    // .solution__container
+
+    &__container {
+    }
+
+    // .solution__header
+
+    &__header {
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .solution__back
+
+    &__back {
+    }
+
+    // .solution__main-title
+
+    &__main-title {
+    }
+
+    // .solution__nav
+
+    &__nav {
+
+        // .solution__nav--list
+
+        &--list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            padding-top: 35px;
+            margin: -12px;
+        }
+
+        // .solution__nav--item
+
+        &--item {
+            margin: 12px;
+            width: min(250px, 100%);
+        }
+
+        // .solution__nav--link
+
+        &--link {
+            width: 100%;
+        }
+    }
+
+    // .solution__info
+
+    &__info {
+        padding-top: 67px;
+        // .solution__info--body
+
+        &--body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            @include _992 {
+                flex-direction: row;
+            }
+        }
+
+        // .solution__info--image
+
+        &--image {
+            flex: 1 1 auto;
+            width: 100%;
+            
+            @include _992 {
+                width: auto;
+                //padding-right: 100px;
+            }
+        }
+
+        // .solution__info--img
+
+        &--img {
+            max-width: 100%;
+            width: 100%; height: auto;
+        }
+
+        // .solution__info--content
+
+        &--content {
+            
+            @include _992 {
+                max-width: 488px;
+            }
+            & p {
+                padding: 10px 0;
+            }
+        }
+
+        // .solution__info--logo
+
+        &--logo {
+            margin-bottom: 10px;
+        }
+    }
+}
