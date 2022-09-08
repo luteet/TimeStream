@@ -74,7 +74,11 @@
     // .solution__info
 
     &__info {
-        padding-top: 67px;
+        padding-top: 37px;
+
+        @include _992 {
+            padding-top: 67px;
+        }
         // .solution__info--body
 
         &--body {
@@ -109,9 +113,12 @@
         // .solution__info--content
 
         &--content {
+
+            padding-top: 15px;
             
             @include _992 {
                 max-width: 488px;
+                padding-top: 0;
             }
             & p {
                 padding: 10px 0;

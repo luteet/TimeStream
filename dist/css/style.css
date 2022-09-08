@@ -3645,7 +3645,7 @@ body._popup-active {
 }
 
 .solution__info {
-  padding-top: 67px;
+  padding-top: 37px;
 }
 
 .solution__info--body {
@@ -3663,6 +3663,10 @@ body._popup-active {
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+
+.solution__info--content {
+  padding-top: 15px;
 }
 
 .solution__info--content p {
@@ -4109,6 +4113,10 @@ body._popup-active {
     padding: 184px 0 60px;
   }
 
+  .solution__info {
+    padding-top: 67px;
+  }
+
   .solution__info--body {
     flex-direction: row;
   }
@@ -4119,6 +4127,7 @@ body._popup-active {
 
   .solution__info--content {
     max-width: 488px;
+    padding-top: 0;
   }
 }
 
